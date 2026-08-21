@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minière | Handmade Crochet Bags</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --color-cream: #faf6ee;
+        --color-green: #0c433e;
+        --color-terracotta: #c87a5b;
+        --color-gold: #c09b65;
+        --color-card-bg: #ffffff;
+      }
+
+      body {
+        background-color: var(--color-cream);
+        font-family: "Montserrat", sans-serif;
+        color: #333333;
+      }
+
+      h1,
+      h2,
+      h3,
+      .brand-font {
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: var(--color-cream);
+        border-bottom: 1px solid rgba(200, 122, 91, 0.2);
+      }
+
+      .navbar-brand {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-green) !important;
+        letter-spacing: 2px;
+      }
+
+      .nav-link {
+        color: var(--color-green) !important;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 80px 0 50px 0;
+        text-align: center;
+      }
+
+      .hero-title {
+        font-size: 3.5rem;
+        color: var(--color-green);
+        margin-bottom: 15px;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1rem;
+        color: var(--color-terracotta);
+        font-weight: 400;
+        letter-spacing: 1.5px;
+      }
+
+      .btn-miniere {
+        background-color: var(--color-green);
+        color: var(--color-cream);
+        border-radius: 30px;
+        padding: 10px 28px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+
+      .btn-miniere:hover {
+        background-color: var(--color-terracotta);
+        color: var(--color-cream);
+      }
+
+      /* Bag Gallery Cards */
+      .card-bag {
+        border: 1px solid rgba(192, 155, 101, 0.25);
+        border-radius: 12px;
+        background-color: var(--color-card-bg);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        overflow: hidden;
+      }
+
+      .card-bag:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(12, 67, 62, 0.08);
+      }
+
+      /* Image Placeholder Styling */
+      .img-placeholder {
+        width: 100%;
+        height: 280px;
+        background-color: #f1ece1;
+        border-bottom: 1px solid rgba(192, 155, 101, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-terracotta);
+      }
+
+      .img-placeholder svg {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 8px;
+        opacity: 0.7;
+      }
+
+      .bag-title {
+        color: var(--color-green);
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+
+      .bag-tag {
+        color: var(--color-gold);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
+      .bag-price {
+        color: var(--color-terracotta);
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--color-green);
+        color: var(--color-cream);
+        padding: 40px 0;
+        margin-top: 80px;
+      }
+
+      footer a {
+        color: var(--color-gold);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MINIÈRE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#collection">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Craft</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero">
+      <div class="container">
+        <h1 class="hero-title">Handmade Crochet Minis</h1>
+        <p class="hero-subtitle text-uppercase">
+          Thoughtfully woven small bags for women & girls
+        </p>
+        <div class="mt-4">
+          <a href="#collection" class="btn btn-miniere text-uppercase"
+            >Explore Collection</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Bag Collection Section -->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2
+            class="display-5 text-success-emphasis"
+            style="color: var(--color-green)"
+          >
+            The Collection
+          </h2>
+          <p class="text-muted">
+            Each piece is individually handcrafted with care and premium yarn.
+          </p>
+        </div>
+
+        <!-- Photo Cards Grid -->
+        <div class="row g-4">
+          <!-- Bag Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card card-bag h-100">
+                 <img src="bag1.jpg" class="card-img-top" alt="Crochet Tote Mini">
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <span class="bag-tag">Women's Collection</span>
+                  <h3 class="bag-title mt-1">Petite Rose Bag</h3>
+                  <p class="card-text text-muted small">
+                    Compact handmade crossbody bag with gold-tone accents.
+                  </p>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="bag-price">$45.00</span>
+                  <button class="btn btn-outline-secondary btn-sm rounded-pill">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bag Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card card-bag h-100">
+              <!-- Replace placeholder with <img> when ready -->
+                               <img src="bag2.jpg" class="card-img-top" alt="Crochet Tote Mini">
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <span class="bag-tag">Girls' Collection</span>
+                  <h3 class="bag-title mt-1">Mini Tulip Pouch</h3>
+                  <p class="card-text text-muted small">
+                    Charming lightweight pouch designed for little hands.
+                  </p>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="bag-price">$30.00</span>
+                  <button class="btn btn-outline-secondary btn-sm rounded-pill">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bag Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card card-bag h-100">
+                <img src="bag3.jpg" class="card-img-top" alt="Crochet Tote Mini">
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <span class="bag-tag">Matching Set</span>
+                  <h3 class="bag-title mt-1">Duo Crochet Tote</h3>
+                  <p class="card-text text-muted small">
+                    Matching mother & daughter small tote set.
+                  </p>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="bag-price">$65.00</span>
+                  <button class="btn btn-outline-secondary btn-sm rounded-pill">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <h3 class="brand-font mb-2" style="font-size: 2rem">MINIÈRE</h3>
+        <p class="small text-white-50">Small Handmade Bags for Women & Girls</p>
+        <p class="small mb-0">
+          &copy; 2026 Minière Studio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
